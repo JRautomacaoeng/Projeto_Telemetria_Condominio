@@ -1,0 +1,2443 @@
+[
+    {
+        "id": "89cdd22066bd7921",
+        "type": "tab",
+        "label": "Pesqueiro",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "2eb391fbede2ecb4",
+        "type": "tab",
+        "label": "Jureia",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "mqtt_broker",
+        "type": "mqtt-broker",
+        "name": "HiveMQ",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 15,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "e911cf68579056e4",
+        "type": "ui_tab",
+        "name": "Pesqueiro",
+        "icon": "dashboard"
+    },
+    {
+        "id": "7be106516b135c14",
+        "type": "ui_group",
+        "name": "Pesqueiro",
+        "tab": "e911cf68579056e4",
+        "order": 1,
+        "width": "6"
+    },
+    {
+        "id": "a60ed2e65943480d",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "19520264d247385c",
+        "type": "ui_tab",
+        "name": "Jureia",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a50360f33fdcc4fb",
+        "type": "ui_group",
+        "name": "Jureia",
+        "tab": "19520264d247385c",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e1551cd91fba89bf",
+        "type": "ui_tab",
+        "name": "Pesqueiro",
+        "icon": "dashboard",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "5b27b71da7778154",
+        "type": "ui_tab",
+        "name": "Jureia",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "efb01e5d749b3fd4",
+        "type": "ui_group",
+        "name": "Pesqueiro",
+        "tab": "e1551cd91fba89bf",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1895775a1cab92df",
+        "type": "ui_group",
+        "name": "Jureia",
+        "tab": "5b27b71da7778154",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6b1afc9d02470133",
+        "type": "mqtt-broker",
+        "name": "broker.hivemq.com",
+        "broker": "broker.hivemq.com",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "6a130bd27a474f0f",
+        "type": "mqtt-broker",
+        "name": "broker.hivemq.com",
+        "broker": "broker.hivemq.com",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "9643a25cd6ac13ff",
+        "type": "mqtt-broker",
+        "name": "broker.hivemq.com",
+        "broker": "broker.hivemq.com",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "4cc570333ba5a390",
+        "type": "mqtt-broker",
+        "name": "broker.hivemq.com",
+        "broker": "broker.hivemq.com",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "b6f3f979a573ec3a",
+        "type": "mqtt-broker",
+        "name": "broker.hivemq.com",
+        "broker": "broker.hivemq.com",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "282b89d6bc059763",
+        "type": "mqtt-broker",
+        "name": "broker.hivemq.com",
+        "broker": "broker.hivemq.com",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "682238c78235549a",
+        "type": "mqtt-broker",
+        "name": "HiveMQ",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 15,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "e8691167fd361644",
+        "type": "ui_tab",
+        "name": "Jureia",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "1c97e50d7e0eeeee",
+        "type": "ui_group",
+        "name": "Jureia",
+        "tab": "e8691167fd361644",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2d5f3e3f9103d23f",
+        "type": "ui_tab",
+        "name": "HEADER",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "4f8dedd1a61e4eb6",
+        "type": "ui_group",
+        "name": "HEADER",
+        "tab": "2d5f3e3f9103d23f",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6ff6f8cede960b2b",
+        "type": "ui_tab",
+        "name": "Pesqueiro",
+        "icon": "dashboard",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "07ab889a3de2069c",
+        "type": "ui_group",
+        "name": "Pesqueiro",
+        "tab": "6ff6f8cede960b2b",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "85e12715adb5b44e",
+        "type": "ui_group",
+        "name": "Pesqueiro",
+        "tab": "e911cf68579056e4",
+        "order": 1,
+        "width": "6"
+    },
+    {
+        "id": "546b42d0163170cc",
+        "type": "ui_tab",
+        "name": "Jureia",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "524c01da6cbed1a9",
+        "type": "ui_group",
+        "name": "Jureia",
+        "tab": "546b42d0163170cc",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d1a0583f17a59b99",
+        "type": "ui_tab",
+        "name": "Pesqueiro",
+        "icon": "dashboard",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "f91fa08d46cd419c",
+        "type": "ui_tab",
+        "name": "Jureia",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a5c2439d7068fd71",
+        "type": "ui_group",
+        "name": "Pesqueiro",
+        "tab": "d1a0583f17a59b99",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4af4448d24968953",
+        "type": "ui_group",
+        "name": "Jureia",
+        "tab": "f91fa08d46cd419c",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1e07583871b9b933",
+        "type": "ui_tab",
+        "name": "Pesqueiro",
+        "icon": "dashboard",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "f66625c55a8595c0",
+        "type": "ui_group",
+        "name": "Pesqueiro",
+        "tab": "1e07583871b9b933",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c106c66a7dd06572",
+        "type": "mqtt-broker",
+        "name": "broker.hivemq.com",
+        "broker": "broker.hivemq.com",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "f5d81436c171ad15",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "3e25e3cafb18c046",
+        "type": "mqtt-broker",
+        "name": "broker.hivemq.com",
+        "broker": "broker.hivemq.com",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "b38f2d31062c27aa",
+        "type": "mqtt-broker",
+        "name": "broker.hivemq.com",
+        "broker": "broker.hivemq.com",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "0355854cbaee2148",
+        "type": "mqtt-broker",
+        "name": "broker.hivemq.com",
+        "broker": "broker.hivemq.com",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "c3e1f10d791aeb0b",
+        "type": "mqtt-broker",
+        "name": "broker.hivemq.com",
+        "broker": "broker.hivemq.com",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "1dd62dc71b25215f",
+        "type": "mqtt-broker",
+        "name": "broker.hivemq.com",
+        "broker": "broker.hivemq.com",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "484aa0461ae000a1",
+        "type": "mqtt-broker",
+        "name": "HiveMQ",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 15,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "322750c6049f110e",
+        "type": "ui_tab",
+        "name": "Jureia",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "cb6123b30bfb76af",
+        "type": "ui_group",
+        "name": "Jureia",
+        "tab": "322750c6049f110e",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c438d7fd82432852",
+        "type": "ui_tab",
+        "name": "HEADER",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "b0b33c1d35f1d08b",
+        "type": "ui_group",
+        "name": "HEADER",
+        "tab": "c438d7fd82432852",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f1afd16bc0cc58c1",
+        "type": "ui_tab",
+        "name": "Pesqueiro",
+        "icon": "dashboard",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "448fa66c1d7dadcd",
+        "type": "ui_group",
+        "name": "Pesqueiro",
+        "tab": "f1afd16bc0cc58c1",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "29e90db9567e0288",
+        "type": "ui_group",
+        "name": "Pesqueiro",
+        "tab": "e911cf68579056e4",
+        "order": 1,
+        "width": "6"
+    },
+    {
+        "id": "21aaec57b1aec1b7",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "6dd3d94e32c7159f",
+        "type": "ui_tab",
+        "name": "Jureia",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "aceda80a4e8bded3",
+        "type": "ui_group",
+        "name": "Jureia",
+        "tab": "6dd3d94e32c7159f",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b339137cc11eece5",
+        "type": "ui_tab",
+        "name": "Pesqueiro",
+        "icon": "dashboard",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "baea4babdb92fc8c",
+        "type": "ui_tab",
+        "name": "Jureia",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "cc64d469e9def687",
+        "type": "telegram bot",
+        "botname": "Alerta ",
+        "usernames": "",
+        "chatids": "",
+        "baseapiurl": "",
+        "testenvironment": false,
+        "updatemode": "polling",
+        "pollinterval": 300,
+        "usesocks": false,
+        "sockshost": "",
+        "socksprotocol": "socks5",
+        "socksport": 6667,
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbothost": "0.0.0.0",
+        "localbotport": 8443,
+        "publicbotport": 8443,
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    },
+    {
+        "id": "50997f51e3bf356b",
+        "type": "ui_group",
+        "name": "Pesqueiro",
+        "tab": "b339137cc11eece5",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "61fac288dbc9c189",
+        "type": "ui_group",
+        "name": "Jureia",
+        "tab": "baea4babdb92fc8c",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "09c71a9029a4e507",
+        "type": "mqtt in",
+        "z": "89cdd22066bd7921",
+        "name": "STATUS BLOCO 1",
+        "topic": "predio/status/bloco1",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "mqtt_broker",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 140,
+        "y": 80,
+        "wires": [
+            [
+                "5c1eadbecb2e145a",
+                "fee42de1de4d5fa5"
+            ]
+        ]
+    },
+    {
+        "id": "5c1eadbecb2e145a",
+        "type": "function",
+        "z": "89cdd22066bd7921",
+        "name": "PARSER + LOGICA",
+        "func": "//\n// ===== CONFIG BLOCO =====\n// JUREIA\nlet NOME_BLOCO = \"PESQUEIRO\";\n\n// PESQUEIRO (ALTERAR AQUI QUANDO COPIAR)\n// let NOME_BLOCO = \"PESQUEIRO\";\n\n\nlet data = msg.payload.toString().trim();\n\n// =======================\n// 🔵 TRATAMENTO DE ACK\n// =======================\nif (data.startsWith(\"ACK;\")) {\n\n    let p = data.split(\";\");\n\n    // Formato: ACK;bloco;id;OK\n    if (p.length >= 4) {\n        let bloco = p[1];\n        let id = p[2];\n\n        return [\n            null,\n            null,\n            null,\n            null,\n            null,\n            null,\n            {\n                payload: `✅ Comando confirmado (${NOME_BLOCO}) ID:${id}`,\n                topic: \"ACK\",\n                type: \"success\",\n                displayMode: \"toast\"\n            }\n        ];\n    }\n\n    return null;\n}\n\n// =======================\n// 🟢 DATA (SEU CÓDIGO ORIGINAL)\n// =======================\n\nif (!data.startsWith(\"DATA;\")) return null;\n\nlet p = data.split(\";\");\nif (p.length < 4) return null;\n\n// 🔧 PROTEÇÃO EXTRA (corrige seu problema do nível)\nlet nivel = Number(p[2] || 0);\nlet boia = Number(p[3] || 0);\n\n// ALERTA\nlet alerta = \"\";\nif (nivel <= 25) alerta = \"🔴 CRÍTICO\";\nelse if (nivel <= 50) alerta = \"🟡 ATENÇÃO\";\nelse alerta = \"🟢 NORMAL\";\n\n// --- LÓGICA DE NOTIFICAÇÃO ---\nlet notificacao = null;\n\nif (nivel <= 25) {\n    notificacao = {\n        payload: `🚨 Nível Crítico ${NOME_BLOCO}: Verifique as boias!`,\n        topic: \"ALERTA\",\n        type: \"error\",\n        displayMode: \"toast\"\n    };\n} else {\n    notificacao = null;\n}\n\n// BOIA\nlet boiaTxt = (boia == 1) ? \"🟢 ATIVA\" : \"🔴 DESLIGADA\";\n\n// SISTEMA (memória)\nlet sistema = flow.get(\"sistema\") || \"SYS_OFF\";\nlet sistemaTxt = (sistema === \"SYS_ON\") ? \"🟢 ATIVO\" : \"🔴 DESLIGADO\";\n\n// BOMBA (memória)\nlet comandoBomba = flow.get(\"bomba\") || \"BOMBA_OFF\";\n\n// REGRA FINAL\nlet bombaLigada = (comandoBomba === \"BOMBA_ON\") || (boia == 1);\n\nlet bombaTxt = bombaLigada\n    ? \"🟢 LIGADA\"\n    : \"🔴 DESLIGADA\";\n\nreturn [\n    { payload: nivel },\n    { payload: alerta },\n    { payload: boiaTxt },\n    { payload: sistemaTxt },\n    { payload: bombaTxt },\n    { payload: nivel },\n    notificacao\n];",
+        "outputs": 7,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 60,
+        "wires": [
+            [
+                "0e3363f6e12963b1"
+            ],
+            [
+                "31c09caa69f68a96",
+                "dc6ebdcf9133d285",
+                "cba21868742ea286"
+            ],
+            [
+                "d57eed2092bd50f7"
+            ],
+            [
+                "7458d74d8cae70f3"
+            ],
+            [
+                "63caae0c101a5cea"
+            ],
+            [
+                "7a7c57f3d92d4eb7"
+            ],
+            [
+                "afc532e6d8b299f2"
+            ]
+        ]
+    },
+    {
+        "id": "fee42de1de4d5fa5",
+        "type": "trigger",
+        "z": "89cdd22066bd7921",
+        "name": "COMUNICAÇÃO",
+        "op1": "🟢 ONLINE",
+        "op2": "🔴 OFFLINE",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "30",
+        "units": "s",
+        "reset": "true",
+        "outputs": 1,
+        "x": 370,
+        "y": 160,
+        "wires": [
+            [
+                "719a62882ace9545"
+            ]
+        ]
+    },
+    {
+        "id": "0e3363f6e12963b1",
+        "type": "ui_gauge",
+        "z": "89cdd22066bd7921",
+        "name": "",
+        "group": "50997f51e3bf356b",
+        "order": 2,
+        "width": "",
+        "height": "",
+        "gtype": "gage",
+        "title": "Nível de água (%)",
+        "label": "",
+        "format": "",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#8c978c",
+            "#00e60f",
+            "#0f28e6"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 670,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "7a7c57f3d92d4eb7",
+        "type": "ui_chart",
+        "z": "89cdd22066bd7921",
+        "name": "",
+        "group": "50997f51e3bf356b",
+        "order": 3,
+        "width": "",
+        "height": "",
+        "label": "Nivel",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": "5",
+        "removeOlderPoints": "50",
+        "removeOlderUnit": "60",
+        "cutout": "",
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 630,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "31c09caa69f68a96",
+        "type": "ui_text",
+        "z": "89cdd22066bd7921",
+        "group": "50997f51e3bf356b",
+        "order": 4,
+        "width": "",
+        "height": "",
+        "name": "",
+        "label": "Alerta",
+        "format": "{{msg.payload}}",
+        "layout": "",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 630,
+        "y": 180,
+        "wires": [],
+        "info": "if (msg.nivel <= 25) {\r\n    msg.payload = \"CRITICO\";\r\n} else if (msg.nivel <= 50) {\r\n    msg.payload = \"ATENCAO\";\r\n} else {\r\n    msg.payload = \"NORMAL\";\r\n}\r\n\r\nreturn msg;"
+    },
+    {
+        "id": "d57eed2092bd50f7",
+        "type": "ui_text",
+        "z": "89cdd22066bd7921",
+        "group": "50997f51e3bf356b",
+        "order": 5,
+        "width": "",
+        "height": "",
+        "name": "",
+        "label": "Boia",
+        "format": "{{msg.payload}}",
+        "layout": "",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 630,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "7458d74d8cae70f3",
+        "type": "ui_text",
+        "z": "89cdd22066bd7921",
+        "group": "50997f51e3bf356b",
+        "order": 6,
+        "width": "",
+        "height": "",
+        "name": "",
+        "label": "Sistema",
+        "format": "{{msg.payload}}",
+        "layout": "",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 640,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "63caae0c101a5cea",
+        "type": "ui_text",
+        "z": "89cdd22066bd7921",
+        "group": "50997f51e3bf356b",
+        "order": 7,
+        "width": "",
+        "height": "",
+        "name": "",
+        "label": "Bomba",
+        "format": "{{msg.payload}}",
+        "layout": "",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 640,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "719a62882ace9545",
+        "type": "ui_text",
+        "z": "89cdd22066bd7921",
+        "group": "50997f51e3bf356b",
+        "order": 8,
+        "width": "",
+        "height": "",
+        "name": "",
+        "label": "Comunicação",
+        "format": "{{msg.payload}}",
+        "layout": "",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 660,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "b3e256c2db967007",
+        "type": "ui_button",
+        "z": "89cdd22066bd7921",
+        "name": "",
+        "group": "50997f51e3bf356b",
+        "order": 9,
+        "width": "",
+        "height": "",
+        "passthru": false,
+        "label": "Ligar Bomba",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "BOMBA_ON",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 80,
+        "y": 420,
+        "wires": [
+            [
+                "76e8deb1b47c5091"
+            ]
+        ]
+    },
+    {
+        "id": "15529d70026c77c5",
+        "type": "ui_button",
+        "z": "89cdd22066bd7921",
+        "name": "",
+        "group": "50997f51e3bf356b",
+        "order": 10,
+        "width": "",
+        "height": "",
+        "passthru": false,
+        "label": "Desligar Bomba",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "BOMBA_OFF",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 80,
+        "y": 460,
+        "wires": [
+            [
+                "76e8deb1b47c5091"
+            ]
+        ]
+    },
+    {
+        "id": "08f51d53e41be036",
+        "type": "ui_button",
+        "z": "89cdd22066bd7921",
+        "name": "",
+        "group": "50997f51e3bf356b",
+        "order": 11,
+        "width": "",
+        "height": "",
+        "passthru": false,
+        "label": "Sistema ON",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "SYS_ON",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 80,
+        "y": 500,
+        "wires": [
+            [
+                "4a0a0206655f08c6"
+            ]
+        ]
+    },
+    {
+        "id": "17878ec73b5d5771",
+        "type": "ui_button",
+        "z": "89cdd22066bd7921",
+        "name": "",
+        "group": "50997f51e3bf356b",
+        "order": 12,
+        "width": "",
+        "height": "",
+        "passthru": false,
+        "label": "Sistema OFF",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "SYS_OFF",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 80,
+        "y": 540,
+        "wires": [
+            [
+                "4a0a0206655f08c6"
+            ]
+        ]
+    },
+    {
+        "id": "76e8deb1b47c5091",
+        "type": "function",
+        "z": "89cdd22066bd7921",
+        "name": "CMD BOMBA",
+        "func": "if (msg.req && msg.req.user && msg.req.user.username !== \"JrAutomacao\") {\n    return null; // bloqueia comando\n}\n\nflow.set(\"bomba\", msg.payload);\nmsg.payload = \"1:\" + msg.payload;\nmsg.topic = \"predio/comando/bloco1\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 440,
+        "wires": [
+            [
+                "4c2aa1b52f906052"
+            ]
+        ]
+    },
+    {
+        "id": "4a0a0206655f08c6",
+        "type": "function",
+        "z": "89cdd22066bd7921",
+        "name": "CMD SISTEMA",
+        "func": "if (msg.req && msg.req.user && msg.req.user.username !== \"JrAutomacao\") {\n    return null; // bloqueia comando\n}\n\nflow.set(\"sistema\", msg.payload);\nmsg.payload = \"1:\" + msg.payload;\nmsg.topic = \"predio/comando/bloco1\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 520,
+        "wires": [
+            [
+                "4c2aa1b52f906052"
+            ]
+        ]
+    },
+    {
+        "id": "4c2aa1b52f906052",
+        "type": "mqtt out",
+        "z": "89cdd22066bd7921",
+        "name": "ENVIO MQTT",
+        "broker": "mqtt_broker",
+        "x": 480,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "dc6ebdcf9133d285",
+        "type": "ui_template",
+        "z": "89cdd22066bd7921",
+        "group": "50997f51e3bf356b",
+        "name": "",
+        "order": 13,
+        "width": 0,
+        "height": 0,
+        "format": "<audio id=\"alarme\" src=\"https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg\" loop></audio>\n\n<script>\n    (function(scope) {\n    let audio = null;\n    \n    // Monitora as mensagens que chegam ao nó\n    scope.$watch('msg', function(msg) {\n        if (!msg) return;\n\n        // Buscamos o elemento de áudio no DOM\n        if (!audio) audio = document.getElementById(\"alarme\");\n\n        // IMPORTANTE: A string deve ser idêntica à da sua função (com o emoji)\n        if (msg.payload === \"🔴 CRÍTICO\") {\n            if (audio && audio.paused) {\n                audio.play().catch(e => {\n                    console.log(\"Aguardando interação do usuário para tocar som...\");\n                });\n            }\n        } else {\n            if (audio && !audio.paused) {\n                audio.pause();\n                audio.currentTime = 0; // Reinicia o som\n            }\n        }\n    });\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 640,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cba21868742ea286",
+        "type": "function",
+        "z": "89cdd22066bd7921",
+        "name": "Controle alerta",
+        "func": "let estadoAnterior = flow.get(\"estado\") || \"NORMAL\";\nlet estadoAtual = msg.payload;\n\n// 🔴 ENTROU EM CRÍTICO\nif (estadoAtual === \"🔴 CRÍTICO\") {\n\n    flow.set(\"estado\", \"CRITICO\");\n\n    msg.payload = 1; // ativa trigger\n    return [msg, null]; // saída 1 = trigger\n}\n\n// 🟢 SAIU DO CRÍTICO\nif (estadoAnterior === \"CRITICO\" && estadoAtual !== \"🔴 CRÍTICO\") {\n\n    flow.set(\"estado\", \"NORMAL\");\n\n    // Para o trigger\n    let stop = { reset: true };\n\n    // Envia mensagem de normalizado\n    let msgNormal = {\n        payload: {\n            chatId: \"7659359556\",\n            type: \"message\",\n            content: \"✅ Situação do bloco PESQUEIRO normalizando\"\n        }\n    };\n\n    return [stop, msgNormal];\n}\n\nreturn null;",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 140,
+        "wires": [
+            [
+                "e31837892527ab3c"
+            ],
+            [
+                "633321ef283cc8ed"
+            ]
+        ]
+    },
+    {
+        "id": "e31837892527ab3c",
+        "type": "trigger",
+        "z": "89cdd22066bd7921",
+        "name": "",
+        "op1": "1",
+        "op2": "0",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "-30",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 870,
+        "y": 80,
+        "wires": [
+            [
+                "b38ea0ed7a71d53f"
+            ]
+        ]
+    },
+    {
+        "id": "b38ea0ed7a71d53f",
+        "type": "function",
+        "z": "89cdd22066bd7921",
+        "name": "MSG Telegram",
+        "func": "msg.payload = {\n    chatId: \"7659359556\",\n    type: \"message\",\n    content: \"🚨 ALERTA!!!\\n\\nBloco PESQUEIRO em CRÍTICO!\\nBaixo nível de água!\\nVerificar URGENTE!\"\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1060,
+        "y": 80,
+        "wires": [
+            [
+                "633321ef283cc8ed"
+            ]
+        ]
+    },
+    {
+        "id": "7f807accb377687e",
+        "type": "ui_template",
+        "z": "89cdd22066bd7921",
+        "group": "50997f51e3bf356b",
+        "name": "",
+        "order": 1,
+        "width": "6",
+        "height": "3",
+        "format": "<div style=\"\n    display:flex;\n    align-items:center;\n    justify-content:space-between;\n    background:#ffffff;\n    color:#0d47a1;\n    padding:12px;\n    border-radius:10px;\n    border: 2px solid #0d47a1;\n    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);\n\">\n\n    <img src=\"https://i.ibb.co/tT2TxDD6/COLORIDO.png\" style=\"height:80px;\">\n\n\n    <div style=\"font-size:22px; font-weight:bold;\">\n        🟢 Online\n    </div>\n\n</div>",
+        "storeOutMessages": false,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 100,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "afc532e6d8b299f2",
+        "type": "ui_toast",
+        "z": "89cdd22066bd7921",
+        "position": "top right",
+        "displayTime": "0",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": true,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 670,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "e1ecabaab420bfd0",
+        "type": "mqtt in",
+        "z": "89cdd22066bd7921",
+        "name": "",
+        "topic": "predio/ack/#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "mqtt_broker",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 90,
+        "y": 240,
+        "wires": [
+            [
+                "229bbf1790a09806"
+            ]
+        ]
+    },
+    {
+        "id": "229bbf1790a09806",
+        "type": "function",
+        "z": "89cdd22066bd7921",
+        "name": "function 2",
+        "func": "let topico = msg.topic;\n\nif (!topico.startsWith(\"predio/ack/\")) return null;\n\nlet partes = topico.split(\"/\");\n\nif (partes.length < 4) return null;\n\nlet bloco = partes[2]; // bloco1\nlet id = partes[3];\n\n// 🔥 PESQUEIRO = BLOCO 1\nif (bloco !== \"bloco1\") return null;\n\n// Configuração da mensagem visual (pop-up)\nmsg.payload = `✅ Pesqueiro confirmou comando (ID ${id})`;\nmsg.type = \"success\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 240,
+        "y": 280,
+        "wires": [
+            [
+                "e12426b76e554ac0",
+                "3f1f8b01692beb59"
+            ]
+        ]
+    },
+    {
+        "id": "e12426b76e554ac0",
+        "type": "ui_toast",
+        "z": "89cdd22066bd7921",
+        "position": "top right",
+        "displayTime": "2",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": true,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 430,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "3f1f8b01692beb59",
+        "type": "ui_template",
+        "z": "89cdd22066bd7921",
+        "group": "50997f51e3bf356b",
+        "name": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "\n<div style=\"display:none;\">\n    <audio id=\"audioPop\" src=\"https://raw.githubusercontent.com/JRautomacaoeng/Meus_audios/main/Notificacao_pop.mp3\" ></audio>\n</div>\n\n<script>\n    (function(scope) {\n    scope.$watch('msg', function(msg) {\n        if (msg) {\n            var audio = document.getElementById('audioPop');\n            \n            // Reinicia o áudio (caso receba dois alertas seguidos)\n            audio.currentTime = 0;\n            \n            // Toca o som\n            audio.play().catch(function(e) {\n                console.log(\"Aguardando interação do usuário para tocar som.\");\n            });\n        }\n    });\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 420,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "633321ef283cc8ed",
+        "type": "telegram sender",
+        "z": "89cdd22066bd7921",
+        "name": "",
+        "bot": "cc64d469e9def687",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 1270,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e3f446b92062f68b",
+        "type": "mqtt in",
+        "z": "2eb391fbede2ecb4",
+        "name": "STATUS BLOCO 2",
+        "topic": "predio/status/bloco2",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "mqtt_broker",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 140,
+        "y": 80,
+        "wires": [
+            [
+                "a3fec17106461510",
+                "4382f55e5f83a3df"
+            ]
+        ]
+    },
+    {
+        "id": "235f46e4c515bfc1",
+        "type": "function",
+        "z": "2eb391fbede2ecb4",
+        "name": "CMD BOMBA",
+        "func": "if (msg.req && msg.req.user && msg.req.user.username !== \"JrAutomacao\") {\n    return null; // bloqueia comando\n}\n\nflow.set(\"bomba\", msg.payload);\nmsg.payload = \"2:\" + msg.payload;\nmsg.topic = \"predio/comando/bloco2\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 400,
+        "wires": [
+            [
+                "78af7c3f53198dab"
+            ]
+        ]
+    },
+    {
+        "id": "d27d6679521c5d3e",
+        "type": "function",
+        "z": "2eb391fbede2ecb4",
+        "name": "CMD SISTEMA",
+        "func": "if (msg.req && msg.req.user && msg.req.user.username !== \"JrAutomacao\") {\n    return null; // bloqueia comando\n}\n\nflow.set(\"sistema\", msg.payload);\nmsg.payload = \"2:\" + msg.payload;\nmsg.topic = \"predio/comando/bloco2\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 480,
+        "wires": [
+            [
+                "78af7c3f53198dab"
+            ]
+        ]
+    },
+    {
+        "id": "a3fec17106461510",
+        "type": "function",
+        "z": "2eb391fbede2ecb4",
+        "name": "PARSER + LOGICA",
+        "func": "\n// ===== CONFIG BLOCO =====\n// JUREIA\nlet NOME_BLOCO = \"JUREIA\";\n\n// PESQUEIRO (ALTERAR AQUI QUANDO COPIAR)\n// let NOME_BLOCO = \"PESQUEIRO\";\n\n\nlet data = msg.payload.toString().trim();\n\n// =======================\n// 🔵 TRATAMENTO DE ACK\n// =======================\nif (data.startsWith(\"ACK;\")) {\n\n    let p = data.split(\";\");\n\n    // Formato: ACK;bloco;id;OK\n    if (p.length >= 4) {\n        let bloco = p[1];\n        let id = p[2];\n\n        return [\n            null,\n            null,\n            null,\n            null,\n            null,\n            null,\n            {\n                payload: `✅ Comando confirmado (${NOME_BLOCO}) ID:${id}`,\n                topic: \"ACK\",\n                type: \"success\",\n                displayMode: \"toast\"\n            }\n        ];\n    }\n\n    return null;\n}\n\n// =======================\n// 🟢 DATA (SEU CÓDIGO ORIGINAL)\n// =======================\n\nif (!data.startsWith(\"DATA;\")) return null;\n\nlet p = data.split(\";\");\nif (p.length < 4) return null;\n\n// 🔧 PROTEÇÃO EXTRA (corrige seu problema do nível)\nlet nivel = Number(p[2] || 0);\nlet boia = Number(p[3] || 0);\n\n// ALERTA\nlet alerta = \"\";\nif (nivel <= 25) alerta = \"🔴 CRÍTICO\";\nelse if (nivel <= 50) alerta = \"🟡 ATENÇÃO\";\nelse alerta = \"🟢 NORMAL\";\n\n// --- LÓGICA DE NOTIFICAÇÃO ---\nlet notificacao = null;\n\nif (nivel <= 25) {\n    notificacao = {\n        payload: `🚨 Nível Crítico ${NOME_BLOCO}: Verifique as boias!`,\n        topic: \"ALERTA\",\n        type: \"error\",\n        displayMode: \"toast\"\n    };\n} else {\n    notificacao = null;\n}\n\n// BOIA\nlet boiaTxt = (boia == 1) ? \"🟢 ATIVA\" : \"🔴 DESLIGADA\";\n\n// SISTEMA (memória)\nlet sistema = flow.get(\"sistema\") || \"SYS_OFF\";\nlet sistemaTxt = (sistema === \"SYS_ON\") ? \"🟢 ATIVO\" : \"🔴 DESLIGADO\";\n\n// BOMBA (memória)\nlet comandoBomba = flow.get(\"bomba\") || \"BOMBA_OFF\";\n\n// REGRA FINAL\nlet bombaLigada = (comandoBomba === \"BOMBA_ON\") || (boia == 1);\n\nlet bombaTxt = bombaLigada\n    ? \"🟢 LIGADA\"\n    : \"🔴 DESLIGADA\";\n\nreturn [\n    { payload: nivel },\n    { payload: alerta },\n    { payload: boiaTxt },\n    { payload: sistemaTxt },\n    { payload: bombaTxt },\n    { payload: nivel },\n    notificacao\n];",
+        "outputs": 7,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 80,
+        "wires": [
+            [
+                "a66753f1eb038543"
+            ],
+            [
+                "7027f3a6d9968466",
+                "2d8105ec9bd399e8",
+                "6b2968478151e80c"
+            ],
+            [
+                "658da486351123fd"
+            ],
+            [
+                "efb657250bbae424"
+            ],
+            [
+                "e1457f34bb5911aa"
+            ],
+            [
+                "c0a20ba5a22ca6bd"
+            ],
+            [
+                "2526d2522509df42"
+            ]
+        ]
+    },
+    {
+        "id": "4382f55e5f83a3df",
+        "type": "trigger",
+        "z": "2eb391fbede2ecb4",
+        "name": "COMUNICAÇÃO",
+        "op1": "🟢 ONLINE",
+        "op2": "🔴 OFFLINE",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "30",
+        "units": "s",
+        "reset": "true",
+        "outputs": 1,
+        "x": 390,
+        "y": 160,
+        "wires": [
+            [
+                "ede481ad35b53b62"
+            ]
+        ]
+    },
+    {
+        "id": "a66753f1eb038543",
+        "type": "ui_gauge",
+        "z": "2eb391fbede2ecb4",
+        "name": "",
+        "group": "61fac288dbc9c189",
+        "order": 2,
+        "width": "",
+        "height": "",
+        "gtype": "gage",
+        "title": "Nível de água (%)",
+        "label": "",
+        "format": "",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#8c978c",
+            "#00e60f",
+            "#0f28e6"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 690,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "c0a20ba5a22ca6bd",
+        "type": "ui_chart",
+        "z": "2eb391fbede2ecb4",
+        "name": "",
+        "group": "61fac288dbc9c189",
+        "order": 3,
+        "width": "",
+        "height": "",
+        "label": "Nivel",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": "5",
+        "removeOlderPoints": "50",
+        "removeOlderUnit": "60",
+        "cutout": "",
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 630,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2d8105ec9bd399e8",
+        "type": "ui_text",
+        "z": "2eb391fbede2ecb4",
+        "group": "61fac288dbc9c189",
+        "order": 4,
+        "width": "",
+        "height": "",
+        "name": "",
+        "label": "Alerta",
+        "format": "{{msg.payload}}",
+        "layout": "",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 630,
+        "y": 180,
+        "wires": [],
+        "info": "if (msg.nivel <= 25) {\r\n    msg.payload = \"CRITICO\";\r\n} else if (msg.nivel <= 50) {\r\n    msg.payload = \"ATENCAO\";\r\n} else {\r\n    msg.payload = \"NORMAL\";\r\n}\r\n\r\nreturn msg;"
+    },
+    {
+        "id": "658da486351123fd",
+        "type": "ui_text",
+        "z": "2eb391fbede2ecb4",
+        "group": "61fac288dbc9c189",
+        "order": 5,
+        "width": "",
+        "height": "",
+        "name": "",
+        "label": "Boia",
+        "format": "{{msg.payload}}",
+        "layout": "",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 630,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "efb657250bbae424",
+        "type": "ui_text",
+        "z": "2eb391fbede2ecb4",
+        "group": "61fac288dbc9c189",
+        "order": 6,
+        "width": "",
+        "height": "",
+        "name": "",
+        "label": "Sistema",
+        "format": "{{msg.payload}}",
+        "layout": "",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 640,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "e1457f34bb5911aa",
+        "type": "ui_text",
+        "z": "2eb391fbede2ecb4",
+        "group": "61fac288dbc9c189",
+        "order": 7,
+        "width": "",
+        "height": "",
+        "name": "",
+        "label": "Bomba",
+        "format": "{{msg.payload}}",
+        "layout": "",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 640,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "ede481ad35b53b62",
+        "type": "ui_text",
+        "z": "2eb391fbede2ecb4",
+        "group": "61fac288dbc9c189",
+        "order": 8,
+        "width": "",
+        "height": "",
+        "name": "",
+        "label": "Comunicação",
+        "format": "{{msg.payload}}",
+        "layout": "",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 660,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "7027f3a6d9968466",
+        "type": "ui_template",
+        "z": "2eb391fbede2ecb4",
+        "group": "61fac288dbc9c189",
+        "name": "",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "format": "<audio id=\"alarme\" src=\"https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg\" loop></audio>\n\n<script>\n    (function(scope) {\n    let audio = null;\n    \n    // Monitora as mensagens que chegam ao nó\n    scope.$watch('msg', function(msg) {\n        if (!msg) return;\n\n        // Buscamos o elemento de áudio no DOM\n        if (!audio) audio = document.getElementById(\"alarme\");\n\n        // IMPORTANTE: A string deve ser idêntica à da sua função (com o emoji)\n        if (msg.payload === \"🔴 CRÍTICO\") {\n            if (audio && audio.paused) {\n                audio.play().catch(e => {\n                    console.log(\"Aguardando interação do usuário para tocar som...\");\n                });\n            }\n        } else {\n            if (audio && !audio.paused) {\n                audio.pause();\n                audio.currentTime = 0; // Reinicia o som\n            }\n        }\n    });\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 660,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b4ddada92f7c7318",
+        "type": "ui_button",
+        "z": "2eb391fbede2ecb4",
+        "name": "",
+        "group": "61fac288dbc9c189",
+        "order": 10,
+        "width": "",
+        "height": "",
+        "passthru": false,
+        "label": "Ligar Bomba",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "BOMBA_ON",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 100,
+        "y": 380,
+        "wires": [
+            [
+                "235f46e4c515bfc1"
+            ]
+        ]
+    },
+    {
+        "id": "d5f8854a357dd577",
+        "type": "ui_button",
+        "z": "2eb391fbede2ecb4",
+        "name": "",
+        "group": "61fac288dbc9c189",
+        "order": 11,
+        "width": "",
+        "height": "",
+        "passthru": false,
+        "label": "Desligar Bomba",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "BOMBA_OFF",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 100,
+        "y": 440,
+        "wires": [
+            [
+                "235f46e4c515bfc1"
+            ]
+        ]
+    },
+    {
+        "id": "d83c37d94de8298a",
+        "type": "ui_button",
+        "z": "2eb391fbede2ecb4",
+        "name": "",
+        "group": "61fac288dbc9c189",
+        "order": 12,
+        "width": "",
+        "height": "",
+        "passthru": false,
+        "label": "Sistema ON",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "SYS_ON",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 100,
+        "y": 480,
+        "wires": [
+            [
+                "d27d6679521c5d3e"
+            ]
+        ]
+    },
+    {
+        "id": "602a39ba50c6fe42",
+        "type": "ui_button",
+        "z": "2eb391fbede2ecb4",
+        "name": "",
+        "group": "61fac288dbc9c189",
+        "order": 13,
+        "width": "",
+        "height": "",
+        "passthru": false,
+        "label": "Sistema OFF",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "SYS_OFF",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 100,
+        "y": 520,
+        "wires": [
+            [
+                "d27d6679521c5d3e"
+            ]
+        ]
+    },
+    {
+        "id": "78af7c3f53198dab",
+        "type": "mqtt out",
+        "z": "2eb391fbede2ecb4",
+        "name": "ENVIO MQTT",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "mqtt_broker",
+        "x": 660,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "6b2968478151e80c",
+        "type": "function",
+        "z": "2eb391fbede2ecb4",
+        "name": "Controle alerta",
+        "func": "let estadoAnterior = flow.get(\"estado\") || \"NORMAL\";\nlet estadoAtual = msg.payload;\n\n// 🔴 ENTROU EM CRÍTICO\nif (estadoAtual === \"🔴 CRÍTICO\") {\n\n    flow.set(\"estado\", \"CRITICO\");\n\n    msg.payload = 1; // ativa trigger\n    return [msg, null]; // saída 1 = trigger\n}\n\n// 🟢 SAIU DO CRÍTICO\nif (estadoAnterior === \"CRITICO\" && estadoAtual !== \"🔴 CRÍTICO\") {\n\n    flow.set(\"estado\", \"NORMAL\");\n\n    // Para o trigger\n    let stop = { reset: true };\n\n    // Envia mensagem de normalizado\n    let msgNormal = {\n        payload: {\n            chatId: \"7659359556\",\n            type: \"message\",\n            content: \"✅ Situação do bloco JURÈIA normalizando\"\n        }\n    };\n\n    return [stop, msgNormal];\n}\n\nreturn null;",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 120,
+        "wires": [
+            [
+                "13bd0ed66f3579a7"
+            ],
+            [
+                "ddc84e3bd7eb6214"
+            ]
+        ]
+    },
+    {
+        "id": "13bd0ed66f3579a7",
+        "type": "trigger",
+        "z": "2eb391fbede2ecb4",
+        "name": "",
+        "op1": "1",
+        "op2": "0",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "-30",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 890,
+        "y": 100,
+        "wires": [
+            [
+                "08704bea331f9379"
+            ]
+        ]
+    },
+    {
+        "id": "08704bea331f9379",
+        "type": "function",
+        "z": "2eb391fbede2ecb4",
+        "name": "MSG Telegram",
+        "func": "msg.payload = {\n    chatId: \"7659359556\",\n    type: \"message\",\n    content: \"🚨 ALERTA!!!\\n\\nBloco JURÈIA em CRÍTICO!\\nBaixo nível de água!\\nVerificar URGENTE!\"\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1080,
+        "y": 100,
+        "wires": [
+            [
+                "ddc84e3bd7eb6214"
+            ]
+        ]
+    },
+    {
+        "id": "895c5eae1b245d47",
+        "type": "ui_template",
+        "z": "2eb391fbede2ecb4",
+        "group": "61fac288dbc9c189",
+        "name": "",
+        "order": 1,
+        "width": "6",
+        "height": "3",
+        "format": "<div style=\"\n    display:flex;\n    align-items:center;\n    justify-content:space-between;\n    background:#ffffff;\n    color:#0d47a1;\n    padding:12px;\n    border-radius:10px;\n    border: 2px solid #0d47a1;\n    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);\n\">\n\n    <img src=\"https://i.ibb.co/tT2TxDD6/COLORIDO.png\" style=\"height:80px;\">\n\n\n    <div style=\"font-size:22px; font-weight:bold;\">\n        🟢 Online\n    </div>\n\n</div>",
+        "storeOutMessages": false,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 120,
+        "y": 20,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2526d2522509df42",
+        "type": "ui_toast",
+        "z": "2eb391fbede2ecb4",
+        "position": "top right",
+        "displayTime": "0",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": true,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 670,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "ddc84e3bd7eb6214",
+        "type": "telegram sender",
+        "z": "2eb391fbede2ecb4",
+        "name": "",
+        "bot": "cc64d469e9def687",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 1270,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9b9ffdc6fb08cae5",
+        "type": "mqtt in",
+        "z": "2eb391fbede2ecb4",
+        "name": "",
+        "topic": "predio/ack/#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "mqtt_broker",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 220,
+        "wires": [
+            [
+                "866d00843b785351"
+            ]
+        ]
+    },
+    {
+        "id": "866d00843b785351",
+        "type": "function",
+        "z": "2eb391fbede2ecb4",
+        "name": "function 1",
+        "func": "let topico = msg.topic;\n\n// Exemplo:\n// predio/ack/bloco2/5907424\n\nif (!topico.startsWith(\"predio/ack/\")) return null;\n\nlet partes = topico.split(\"/\");\n\nif (partes.length < 4) return null;\n\nlet bloco = partes[2]; // bloco2\nlet id = partes[3];    // 5907424\n\n// 🔥 FILTRO (JUREIA = bloco2)\nif (bloco !== \"bloco2\") return null;\n\n// POP-UP\nmsg.payload = `✅ Juréia confirmou comando (ID ${id})`;\nmsg.type = \"success\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 260,
+        "wires": [
+            [
+                "484951cc20472288",
+                "75f75e4d1ddd3244"
+            ]
+        ]
+    },
+    {
+        "id": "484951cc20472288",
+        "type": "ui_toast",
+        "z": "2eb391fbede2ecb4",
+        "position": "top right",
+        "displayTime": "4",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": true,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 430,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "75f75e4d1ddd3244",
+        "type": "ui_template",
+        "z": "2eb391fbede2ecb4",
+        "group": "61fac288dbc9c189",
+        "name": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<div style=\"display:none;\">\n    <audio id=\"audioPop\" src=\"https://raw.githubusercontent.com/JRautomacaoeng/Meus_audios/main/Notificacao_pop.mp3\"></audio>\n</div>\n\n<script>\n    (function(scope) {\n    scope.$watch('msg', function(msg) {\n        if (msg) {\n            var audio = document.getElementById('audioPop');\n            \n            // Reinicia o áudio (caso receba dois alertas seguidos)\n            audio.currentTime = 0;\n            \n            // Toca o som\n            audio.play().catch(function(e) {\n                console.log(\"Aguardando interação do usuário para tocar som.\");\n            });\n        }\n    });\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 420,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "32ea88234b42d4bf",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-dashboard": "3.6.6",
+            "node-red-contrib-telegrambot": "17.1.3"
+        }
+    }
+]
